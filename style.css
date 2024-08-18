@@ -1,7 +1,7 @@
 :root{
     /* Primary */
     --blue: hsl(246, 80%, 60%);
-    --light-red: hsl(15, 100%, 70%);
+    --light-orange: hsl(15, 100%, 70%);
     --soft-blue: hsl(195, 74%, 62%);
     --light-red: hsl(348, 100%, 68%);
     --lime-green: hsl(145, 58%, 55%);
@@ -29,7 +29,7 @@ body{
 }
 
 main>section{
-    border:1px solid red;
+    /* border:1px solid red; */
     padding-block:5.0625rem;
     padding-inline:1.5rem;
     display:grid;
@@ -38,7 +38,6 @@ main>section{
 }
 
 article{
-    border:1px solid green;
     grid-column:span 12;
     border-radius:15px;
 }
@@ -55,16 +54,16 @@ article:nth-of-type(1) section:first-of-type{
     padding-inline-end:2.56rem;
     display:flex;
     align-items:center;
-    gap:1rem;
+    gap:1.1rem;
 }
 
-img{
+article:nth-of-type(1) img{
     border:3px solid #fff;
     border-radius:50%;
     width:4rem;
 }
 
-article:nth-of-type(1) section:first-of-type p{
+p, span{
     font-size:0.9375rem;
     font-weight:300;
     color:var(--pale-blue);
@@ -86,4 +85,73 @@ a{
     font-weight:400;
     flex:1;
     text-align:center;
+}
+
+
+article:nth-of-type(2){
+    background-color:var(--light-orange);
+    background-image:url('./images/icon-work.svg');
+}
+
+article:nth-of-type(3){
+    background-color:var(--soft-blue);
+    background-image:url('./images/icon-play.svg');
+}
+
+article:nth-of-type(4){
+    background-color:var(--light-red);
+    background-image:url('./images/icon-study.svg');
+}
+
+article:nth-of-type(5){
+    background-color:var(--lime-green);
+    background-image:url('./images/icon-exercise.svg');
+}
+
+article:nth-of-type(6){
+    background-color:var(--violet);
+    background-image:url('./images/icon-social.svg');
+}
+
+article:nth-of-type(7){
+    background-color:var(--soft-orange);
+    background-image:url('./images/icon-self-care.svg');
+}
+
+article:not(:first-of-type){
+    background-repeat:no-repeat;
+    background-position-x:14.47rem;
+    background-position-y:-0.68rem;
+}
+
+article:not(:first-of-type) section{
+    background-color:var(--dark-blue);
+    border-radius:15px;
+    margin-top:2.375rem;
+    padding-block:1.75rem;
+    padding-inline:1.5rem;
+}
+
+article:not(:first-of-type) section div{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+article:not(:first-of-type) section div:last-of-type{
+    margin-block-start:0.3rem;
+}
+
+strong{
+    font-size:1.125rem;
+    font-weight:400;
+}
+
+article:not(:first-of-type) img{
+   width:21px;
+}
+
+h2{
+    font-size:2rem;
+    font-weight:300;
 }
