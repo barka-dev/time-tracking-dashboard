@@ -1,15 +1,3 @@
-{/* <article>
-    <section>
-        <div>
-            <strong></strong>
-            <span></span>
-        </div>
-        <div>
-            <h2></h2>
-            <p></p>
-        </div>
-    </section>
-</article> */}
 
 const container = document.querySelector('#container');
 
@@ -28,7 +16,7 @@ fetch('/data.json')
                 <section>
                     <div>
                         <strong>${info.title}</strong>
-                        <span>...</span>
+                        <img src="./images/icon-ellipsis.svg"/>
                     </div>
                     <div>
                         <h2>${info.timeframes.weekly.current}hrs</h2>
