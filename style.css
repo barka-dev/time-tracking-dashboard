@@ -87,6 +87,10 @@ a{
     cursor:pointer;
 }
 
+a:hover{
+    color:#fff;
+}
+
 
 article:nth-of-type(2){
     background-color:var(--light-orange);
@@ -120,12 +124,12 @@ article:nth-of-type(7){
 
 article:not(:first-of-type){
     background-repeat:no-repeat;
-    background-position-x:14.47rem;
+    background-position-x:calc(100% - 1.08rem);
     background-position-y:-0.68rem;
 }
 
 article:nth-of-type(5){
-    background-position-x:14.35rem;
+    background-position-x:calc(100% - 1.1rem);
     background-position-y:0rem;
 }
 
@@ -135,6 +139,10 @@ article:not(:first-of-type) section{
     margin-top:2.375rem;
     padding-block:1.75rem;
     padding-inline:1.5rem;
+}
+
+article:not(:first-of-type) section:hover{
+    background-color:#33397A;
 }
 
 article:not(:first-of-type) section div{
@@ -152,8 +160,12 @@ strong{
     font-weight:400;
 }
 
-article:not(:first-of-type) img{
-   width:21px;
+svg{
+   cursor:pointer;
+}
+
+svg path:hover{
+    fill:#fff!important;
 }
 
 h2{
@@ -165,7 +177,7 @@ h2{
     color:#fff !important;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     main{
         height:100vh;
         display:flex;
@@ -175,8 +187,8 @@ h2{
 
     main>section{
         padding-block:0;
-        padding-inline:10.31rem;
-        gap:1.875rem;
+        padding-inline:1rem;
+        gap:1.8rem;
     }
 
     article{
@@ -214,17 +226,6 @@ h2{
         text-align:left;
     }
     
-    article:not(:first-of-type){
-        background-repeat:no-repeat;
-        background-position-x:9.97rem;
-        background-position-y:-0.68rem;
-    }
-
-    article:nth-of-type(5){
-        background-position-x:9.85rem;
-        background-position-y:0rem;
-    }
-    
     article:not(:first-of-type) section{
         margin-top:2.8125rem;
         padding:1.8125rem 2.1875rem 2rem 1.875rem;
@@ -243,3 +244,17 @@ h2{
     }
 
   }
+
+@media screen and (min-width:1200px){
+    main>section{
+        padding-inline:3rem;
+        gap:1.875rem;
+    }
+}
+
+@media screen and (min-width:1440px){
+    main>section{
+        padding-inline:10.31rem;
+        gap:1.875rem;
+    }
+}
