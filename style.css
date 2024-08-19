@@ -216,24 +216,16 @@ h2{
     }
     
     article:not(:first-of-type) section{
-        display:grid;
-        gap:1.5625rem;
         margin-top:2.8125rem;
-        padding-block-start:1.8125rem;
-        padding-block-end:2rem;
-        padding-inline-start:1.875rem;
-        padding-inline-end:2.1875rem;
+        padding:1.8125rem 2.1875rem 2rem 1.875rem;
     }
     
     article:not(:first-of-type) section div:last-of-type{
+        margin-block-start:1.5625rem;
         flex-direction:column;
         justify-content:flex-start;
         align-items:flex-start;
         gap:0.5rem;
-    }
-    
-    article:not(:first-of-type) section div:last-of-type{
-        margin-block-start:0.3rem;
     }
     
     h2{
