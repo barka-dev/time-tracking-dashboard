@@ -29,11 +29,10 @@ body{
 }
 
 main>section{
-    /* border:1px solid red; */
     padding-block:5.0625rem;
     padding-inline:1.5rem;
     display:grid;
-    grid-template-column:repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap:1.5rem;
 }
 
@@ -80,11 +79,12 @@ article:nth-of-type(1) section:last-of-type{
 }
 
 a{
-    font-size:1.25rem;
+    font-size:1.125rem;
     color:var(--desaturated-blue);
     font-weight:400;
     flex:1;
     text-align:center;
+    cursor:pointer;
 }
 
 
@@ -159,3 +159,85 @@ h2{
 .active{
     color:#fff !important;
 }
+
+@media screen and (min-width: 1200px) {
+    main{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    main>section{
+        padding-block:0;
+        padding-inline:10.31rem;
+        gap:1.875rem;
+    }
+
+    article{
+        grid-column:span 3;
+    }
+
+    article:first-of-type{
+        grid-row:span 2;
+    }
+
+    article:nth-of-type(1) section:first-of-type{
+        padding:2.31rem 5.25rem 5rem 2rem;
+        flex-direction:column;
+        align-items:start;
+        gap:2.6875rem;
+    }
+    
+    article:nth-of-type(1) img{
+        width:4.875rem;
+    }
+    
+    h1{
+        font-size:2.5rem;
+    }
+    
+    article:nth-of-type(1) section:last-of-type{
+        padding-block-start:1.625rem;
+        padding-block-end:2rem;
+        padding-inline-start:2rem;
+        flex-direction:column;
+        gap:1.3125rem;
+    }
+    
+    a{
+        text-align:left;
+    }
+    
+    article:not(:first-of-type){
+        background-repeat:no-repeat;
+        background-position-x:14.47rem;
+        background-position-y:-0.68rem;
+    }
+    
+    article:not(:first-of-type) section{
+        display:grid;
+        gap:1.5625rem;
+        margin-top:2.8125rem;
+        padding-block-start:1.8125rem;
+        padding-block-end:2rem;
+        padding-inline-start:1.875rem;
+        padding-inline-end:2.1875rem;
+    }
+    
+    article:not(:first-of-type) section div:last-of-type{
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:flex-start;
+        gap:0.5rem;
+    }
+    
+    article:not(:first-of-type) section div:last-of-type{
+        margin-block-start:0.3rem;
+    }
+    
+    h2{
+        font-size:3.5rem;
+    }
+
+  }
