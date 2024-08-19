@@ -124,6 +124,11 @@ article:not(:first-of-type){
     background-position-y:-0.68rem;
 }
 
+article:nth-of-type(5){
+    background-position-x:14.35rem;
+    background-position-y:0rem;
+}
+
 article:not(:first-of-type) section{
     background-color:var(--dark-blue);
     border-radius:15px;
@@ -211,8 +216,13 @@ h2{
     
     article:not(:first-of-type){
         background-repeat:no-repeat;
-        background-position-x:14.47rem;
+        background-position-x:9.97rem;
         background-position-y:-0.68rem;
+    }
+
+    article:nth-of-type(5){
+        background-position-x:9.85rem;
+        background-position-y:0rem;
     }
     
     article:not(:first-of-type) section{
